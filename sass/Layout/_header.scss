@@ -1,0 +1,29 @@
+/*    En-tête  */
+
+header {
+    display: flex;
+    justify-content: center;
+
+}
+ 
+
+.head_page {
+
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+    
+    & a {
+
+        color: $color-secondary; 
+        text-decoration: none;
+
+        & h1 {
+
+            font-family:'montserratbold', sans-serif;
+            font-size: map-get($textsizex, "head");
+
+        }
+    }
+}

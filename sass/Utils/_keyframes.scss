@@ -1,0 +1,33 @@
+/*    Animation des boutons du bas de page   */
+
+@keyframes wiggle {
+
+    0% { transform:  rotate(0deg); }
+    14% { transform: rotate(-3deg); }
+    28% { transform: rotate(0deg); }
+    42% { transform: rotate(3deg); }
+    57% { transform: rotate(0deg); }
+    71% { transform: rotate(-3deg); }
+    85% { transform: rotate(0deg); }
+    100% { transform: rotate(3deg); }
+
+}
+
+/*    Animation des points   */
+
+@keyframes pulse {
+
+    from, 
+    40% {
+        opacity: 0; 
+    }
+    50%
+    {
+        opacity: 0.5;
+    }
+    80%,
+    to {
+        opacity: 1;
+    }
+
+}

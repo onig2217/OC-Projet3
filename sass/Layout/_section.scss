@@ -1,0 +1,385 @@
+/*  - START INDEX.html -  */
+
+section {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/* -- Bloc des menus page d'acceuil -- */
+
+.menu {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    width: 1100px;
+    margin-top: 3%;
+    
+    & a {
+
+        display: inline-block;
+        width: 450px;
+        height: 500px;
+        margin-bottom: 6%;
+        text-decoration: none;
+        
+    }
+    
+    /* Nom des menus d'acceuil */
+
+    &_title {
+
+        display: flex;
+        flex-direction: column;
+        box-shadow: 1px 1px 15px #ededed;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        
+        /* Transition du titre des menus */
+
+        &:hover p {
+            @include transition-menu;
+        }
+        &:hover h2 {
+            @include transition-menu;
+        }
+        &:hover img {
+            @include transition-menu;
+        }
+
+        /* Typo du menu note enchantée */
+
+        &--enchantee {
+
+            background-color: rgb(252, 223, 219, 0.8);
+            font-family: caveatregular;
+            color: black;
+            font-size: 2.1rem;
+
+            & img {
+                width: 20%;
+            }
+            & p {
+                font-family: 'roboto_slabregular';
+            }
+        }
+
+        /* Typo du menu chic a la francaise */
+
+        &--francaise {
+
+            background-color: #fff5fe;
+            font-family: 'roboto_slabregular';
+
+            & h2 {
+
+                background: -webkit-linear-gradient(135deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+                background: linear-gradient(135deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                font-size: 2rem;
+
+            }
+            & p {
+
+                font-size: 1.8rem;
+                color: rgb(199, 116, 18);
+
+            }
+        }
+
+        /* Typo du menu le délice des papilles */
+
+        &--papilles {
+
+            background-color: #f9f9f9;
+            font-family: 'dancing_script_otregular', cursive;
+            font-size: 1.8rem;
+
+            & h2 {
+
+                background: -webkit-linear-gradient(to right,  #0229dd 0%,#0889fb 100%);
+                background: linear-gradient(to right,  #0229dd 0%,#0889fb 100%); 
+                -webkit-text-fill-color:transparent;
+                -webkit-background-clip:text;
+                
+            }
+
+            & p {
+
+                color: #0887fb;
+                font-family: caveatbold;
+                font-size: 3rem;
+
+            }
+        }
+        
+        /* Typo du menu la palette du goût */
+
+        &--gout {
+
+            background-color: #fdfdfd;
+            font-family: 'kaushan_scriptregular';
+            font-size: 1.8rem;
+            
+            & h2 {
+
+                background: -webkit-linear-gradient(to right, #43973d 0%, #beff7f 100%);
+                background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+
+            }
+            & p {
+
+                color: #72bf56;
+                font-family: caveatbold;
+                font-size: 3rem;
+
+            }
+        }
+    }    
+}
+
+/*  - END INDEX.html -  */
+
+/*  - START 
+CHIC_FRANCAISE / 
+DELICE_PAPILLES / 
+NOTE_ENCHANTEE / 
+PALETTE_GOUT / 
+.HTML 
+*/
+
+/* -- Typo des menus en général -- */
+
+.menu_presentation {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    margin-bottom: 10%;
+    margin-top: 3%;
+    box-shadow: 1px 1px 15px #ededed;
+    padding-bottom: 5%;
+    font-size: 1.8rem;
+    font-family: caveatregular;
+    
+    &--enchantee {
+        background-color: #fcdfdb;
+    }
+    &--francaise {
+        background-color:rgb(255, 245, 254);
+        font-family: 'roboto_slabregular';
+        font-size: 1.3rem;
+    }
+    &--papilles {
+        background-color: #f9f9f9;
+    }
+    &--gout {
+        background-color: #fdfdfd;
+    }
+    
+}
+
+/* -- Haut du menu -- */
+
+.head_menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+    /* Haut du menu note enchantée */
+
+    &--enchantee {
+
+        & img {
+            width: 12%;
+            align-self: center;
+        }
+
+        & h2 {
+            margin: 0;
+            font-size: 3rem;
+        }
+    }
+
+    /* Haut du menu chic francaise */
+
+    &--francaise {
+
+        & h2 {
+
+            font-size: 3rem;
+            background: -webkit-linear-gradient(135deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+            background: linear-gradient(135deg, #e38a12 0%, #a768bc 51%, #b38cfa 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+        }
+    }
+
+    /* Haut du menu délice papilles */
+
+    &--papilles {
+
+        & h2 {
+
+            font-size: 3.5rem;
+            font-family: 'dancing_script_otregular';
+            background: -webkit-linear-gradient(to right, #0229dd 0%, #0889fb 100%);
+            background: linear-gradient(to right, #0229dd 0%, #0889fb 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+
+        }
+    }
+
+    /* Haut du menu palette goût */
+
+    &--gout {
+        
+        & h2 {
+
+            font-size: 3rem;
+            font-family: 'kaushan_scriptregular';
+            background: -webkit-linear-gradient(to right, #43973d 0%, #beff7f 100%);
+            background: linear-gradient(to right, #43973d 0%, #beff7f 100%);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            
+        }
+    }
+}
+
+/* -- Les blocs des menus -- */
+
+.bloc_menu {
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+
+    &--francaise1 {
+        color: #c67412;
+    }
+    &--francaise2 {
+        color: #a56799;
+    }
+    &--francaise3 {
+        color: #6e4ccc;
+    }
+
+    /* Ligne des menus */
+
+    &__ligne {
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        /* Texte des lignes */
+
+        & p {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+    }
+
+    /* Titre des entrees, plats et desserts */
+
+    &__head {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        /* Image autour des titres */
+
+        & img {
+            
+            overflow: hidden;
+            max-width: 30%;
+            height: auto;
+            align-self: center;
+        }
+
+        /* Animation des titres souligné */ 
+
+        & h3 {
+            white-space: nowrap;
+            background: linear-gradient(to top, #fdcb46 0%, #fdcb46 0.2vw, transparent 0.2vw) no-repeat;
+            background-size: 0 100%;
+            transition: background-size 300ms;
+            &:hover {
+                background-size: 100% 100%;  
+            }
+        }
+    }
+}
+
+/* -- Bas du menu -- */
+
+.foot_menu {
+
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+
+    & img {
+        width: 10%;
+        height: 10%;
+        align-self: center;
+    }
+}
+
+
+/*  - END 
+CHIC_FRANCAISE / DELICE_PAPILLES / NOTE_ENCHANTEE / PALETTE_GOUT / .HTML 
+*/
+
+/* - START MENTIONS_LEGALES.html - */
+
+.mensions {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 0;
+    padding-bottom: 4%;
+
+    & p {
+        font-size: 1.3rem;
+        text-align: justify-all;
+        
+    }
+    & h5 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    & h6 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+        margin-top: 15px;
+    }
+    
+}
+
+span {
+    font-weight: bold;
+}
+
+/* - END MENTIONS_LEGALES.html - */

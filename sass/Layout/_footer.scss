@@ -1,0 +1,57 @@
+/*   Bas de page du site Ohmyfood   */
+
+footer {
+
+    display: flex;
+    justify-content: center;
+  
+}
+
+.foot_page {
+
+    @include typography;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 6%;
+    position: fixed;
+    bottom: 0;
+    font-family:'montserratbold', sans-serif;
+
+    &__btn {
+
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 50%;
+
+        &--contact {
+
+            display: flex;
+            justify-content: flex-end;
+            
+        }
+
+        & a {
+
+            text-decoration: none;
+            color: $color-secondary;
+            display: inline-block;
+            font-weight: bold;
+            font-size: map-get($textsizex, "foot");
+            content:"";
+
+            &:hover{
+
+                animation: wiggle 1s;
+                animation-iteration-count: infinite;
+
+            }
+            
+        }    
+    }
+}
+
+
+          
+      
